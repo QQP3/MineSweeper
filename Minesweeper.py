@@ -118,8 +118,8 @@ class MinesweeperGUI:
         self.mines_entry.insert(0, str(self.mines))
         self.mines_entry.pack(side=tk.LEFT)
         tk.Button(top, text='Apply', command=self.apply_settings).pack(side=tk.LEFT)
-        tk.Button(top, text='AI Step', command=self.autoplay_step).pack(side=tk.LEFT)
-
+        tk.Button(top, text='Auto Step', command=self.autoplay_step).pack(side=tk.LEFT)
+        
         self.board_frame = tk.Frame(self.master)
         self.board_frame.pack()
         self.draw_board()
